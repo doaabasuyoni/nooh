@@ -5,6 +5,8 @@ use App\Http\Controllers\pagehome;
 use  App\Http\Controllers\newall;
 use  App\Http\Controllers\advertisements;
 use  App\Http\Controllers\changeimage;
+use  App\Http\Controllers\student;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +24,7 @@ Route::resource('/new',newall::class);
 Route::resource('/advertisements',advertisements::class);
 Route::get('/changimage',[changeimage::class,'index'] )->name('changeimage');
 Route::post('/editchangimage', [changeimage::class, 'editData'])->name('sendData');
+Route::get('/profilestudent',[student::class,'index'] )->name('student');
 
 
 Auth::routes();
