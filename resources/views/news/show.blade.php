@@ -58,11 +58,11 @@
     <p class="text-gray-700 text-l py-8 leading-6" style="padding-top: 30px;margin: bottom 100px;">
     {!! $r3->description!!}
     </p>
-    <a href="/new/{{$r3->slug}}/edit"   id="r1" class="bg-success">Edit New</a>
+    <a href="/new/{{$r3->slug}}/edit"   id="r1" class="bg-success">تعديل الخبر</a>
     <form action="/new/{{$r3->slug}}" method="POST"  >
                       @csrf
                       @method('delete')
-    <button   id="r2" class="bg-danger" name="submit" type="submit">Delete New</a>
+    <button   id="r2" class="bg-danger" name="submit" type="submit">حذف الخبر</a>
     </form>
     </div>
     

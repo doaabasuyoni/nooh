@@ -25,12 +25,12 @@
     }
     </style>
 <div class="container m-auto text-center pt-15 pb-5" style="margin:50px; padding:20px ">
-<h1 class="text-6xl font-bold" ">All News</h1>
+<h1 class="text-6xl font-bold" ">كل الأخبار</h1>
 </div>
 <div class="container sm:grid  mx-auto  ">
-<a href="/new/create"   id="r1" style="padding: 7px;margin-top:0%;background:#5B8FB9">Create New</a>
+<a href="/new/create"   id="r1" style="padding: 7px;margin-top:0%;background:#00BFFF">إنشاء خبر</a>
 </div>
-<div class="container">
+<div class="container" dir="rtl">
   <div class="row py-3">
     @foreach($r2 as $item)
       <div class="col-md-4" >   
@@ -39,7 +39,7 @@
           <div class="card-body">
           <a href="/new/{{$item->slug}}" style="color:black">  <h5 class="card-text" id="r2">{{$item->title}}</h5> </a>
             <p class="card-title" style="color: rgb(135, 135, 136); font-size: 12px;">{{$item->updated_at}}</p>
-            <a href="/new/{{$item->slug}}" class="btn" id="r1" style="background:#5B8FB9;border-radius: 10px;color:white">Read More</a>
+            <a href="/new/{{$item->slug}}" class="btn" id="r1" style="background:#00BFFF;border-radius: 10px;color:white">قراءة المزيد</a>
           </div>
         </div>
       </div>

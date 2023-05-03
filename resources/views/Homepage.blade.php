@@ -10,7 +10,7 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
 
-  <div class="carousel-inner">
+  <div class="carousel-inner" >
     @foreach($r as $a)
       <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
         <img src="/changeimage/{{$a->imagefirst}}" class="d-block w-100" style="height: 490px;">
@@ -34,25 +34,25 @@
   </button>
 </div>
 
-<a href="/changimage"><button type="button" class="btn " id="d">Chang Image</button> </a>
+<a href="/changimage" ><button type="button" class="btn " id="d" >تغير الصور</button> </a>
 
 <div class="wrapper">
   <div class="cols cols0">
-    <h1>Welcome<span class="multiText"></span></h1>
-  <h2 >Clinical field training</h2>
-  <p  >in actual work settings, which qualifies them and enhances their skills to apply what they have learned for serving patients and society</p>
+    <h1><span>عزيزي </span><span class="multiText"></span>:مرحبا بكم في موقع التدريب الميداني</h1>
+  <h2 >التدريب الميداني</h2>
+  <p  >هو مجموعة من المهارات والخبرات التي يتم تقديمها للطالب ضمن إطار مؤسسي أو ضمن أحد مجالات الممارسة، وذلك بهدف مساعدة الطالب على اكتساب المعارف المختلفة، والخبرات الميدانية، والمهارات الفنية، بالإضافة إلى تعديل السمات، والسلوكيات الشخصية لديه، بحيث يساهم ذلك بشكل كبير في النمو المهني للطالب</p>
   </div>
 </div>
 <!-- New-->
-<header id="t1">
+<header id="t1"  >
   <div>
     <ul>
-      <li><a href="/new" id="r1">All News</a></li>
+      <li><a href="/new" id="r1">كل الأخبار</a></li>
     </ul>
 </div>
-  <h1 id="a1">Latest News</h1>
+  <h1 id="a1">آخر الأخبار</h1>
 </header>
-<div class="container">
+<div class="container" dir="rtl">
   <div class="row py-3">
     @foreach($rows as $item)
       <div class="col-md-4 text-center">
@@ -77,17 +77,17 @@
 <header id="t1">
   <div>
     <ul>
-      <li><a href="/advertisements" id="r1">All Advertisements</a></li>
+      <li><a href="/advertisements" id="r1">كل الإعلانات</a></li>
     </ul>
 </div>
-  <h1 id="a1">Latest Advertisements</h1>
+  <h1 id="a1">آخر الإعلانات</h1>
 </header>
-<div class="container">
+<div class="container" dir="rtl">
   <div class="row py-3">
     @foreach($row as $item)  
-      <div class="card mb-3" style="width: 940px;">
-  <div class="row g-0">
-    <div class="col-md-4" style="background:#5B8FB9; text-align:center;">
+      <div class="card mb-3" style="width: 840px;height:100px">
+  <div class="row g-0" >
+    <div class="col-md-4" style="background:#00BFFF; text-align:center;height:100px;width: 240px;margin-right:0%">
    <div style="margin:30px;display:inline-block"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> 
       <p  style="color:white; font-size: 18px;margin: 5px;">{{$item->updated_at}}</p></div>
     </div>
@@ -105,9 +105,9 @@
 <Style>
   .wrapper{
     display: flex; width: 100%;
-    height: 100%;justify-content: left;align-items:left;
+    height: 100%;justify-content: right;align-items:right;
     padding: 0% 10%;
-    text-align: left;
+    text-align: right;
   }
   #r2:hover{
         font-size:20px;
@@ -120,19 +120,19 @@
     width: 90%;
   }
   h1{
-    display: block;font-size: 72px;font-weight: 600;font-family: "Poppins";
+    display: block;font-size: 43px;font-weight: 600;font-family: "Poppins";
   }
   .multiText{
-    color: #5B8FB9;text-transform: capitalize;padding-left: 15px;
+    color: #00BFFF;text-transform: capitalize;padding-left: 15px;
   }
   h2{
-    display: block;padding-top: 20px;padding-left: 40px;font-size: 40px;
+    display: block;padding-top: 20px;padding-left: 40px;font-size: 37px;
   }
   p{
-    display: block;width: 90%;font-size: 1.2em;padding-left: 40px;font-family: "Comic Sans MS";;
+    display: block;width: 90%;font-size: 18px;padding-left: 40px;font-family: "Comic Sans MS";;
   }
   #r1{
-        color: white;font-weight: 500;font-size:18px;text-decoration:none;border-radius: 15px;  background:#5B8FB9;margin-left: 150px;padding-right: 30px;padding-left:30px;text-align: center;
+        color: white;font-weight: 500;font-size:18px;text-decoration:none;border-radius: 15px;  background:#00BFFF;margin-left: 150px;padding-right: 30px;padding-left:30px;text-align: center;
     }
     #r1:hover{
      background: green;
@@ -144,7 +144,7 @@
   height: 50px;
   margin: 25px;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
 }
 
@@ -189,10 +189,11 @@ div ul li a {
   }
   #d{
     margin: 30px;
-    background: #5B8FB9;
+    background: #00BFFF;
      margin-left:100px ;
      color: white;
      border-radius: 15px;
+     
   }
   #d:hover{
     background:black;
@@ -201,7 +202,7 @@ div ul li a {
 <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
 <script>
    var typingEffect=new Typed(".multiText",{
-    strings:["User","Student","Supervisor"],
+    strings:["الزائر","الطالب","المشرف"],
     loop:true,
     typeSpeed:100,
     backSpeed:80,

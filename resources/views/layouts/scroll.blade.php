@@ -13,16 +13,16 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #423F3E; 
+  background: black; 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #5B8FB9; 
+  background: #00BFFF; 
 }
 ::selection {
-  color: #5B8FB9;
-  background: yellow;
+  color:white;
+  background: #1E90FF;
 }
 </style>

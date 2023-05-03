@@ -5,34 +5,34 @@
 @endpush
 
 @section('content')
-	<div class="container mt-5">
+	<div class="container mt-5" dir="rtl">
 	    <div class="row">
 	        <div class="col-sm-12">
 	            <div class="card">
 	                <div class="card-header pb-0">
-	                    <h5> Change Image Home Page</h5>
+	                    <h5> تغير الصور في الصفحة الرئيسية</h5>
 	                </div>
 	                <div class="card-body add-post">
 	                    <form action="/editchangimage" method="POST" enctype="multipart/form-data" >
                       @csrf
 	                        <div class="col-sm-12">
 	                            <div class="form-group">
-	                                <label for="validationCustom01">First Image:</label>
+	                                <label for="validationCustom01">الصورة الأولى:</label>
 									<input class="form-control form-control-lg" name="file" id="file" type="file">
 	                            </div>
 								<div class="form-group">
-	                                <label for="validationCustom01">Second Image:</label>
+	                                <label for="validationCustom01">الصورة الثانية:</label>
 									<input class="form-control form-control-lg" name="file1" id="file" type="file">
 	                            </div>
 								<div class="form-group">
-	                                <label for="validationCustom01">Third Image:</label>
+	                                <label for="validationCustom01">الصورة الثالثة:</label>
 									<input class="form-control form-control-lg" name="file2" id="file" type="file">
 	                            </div>   
 	                        </div>
                           <div>
                            </div>
                   <div class="btn-showcase m-30 ">
-	                        <button class="btn " type="submit" name="submit" style="background:#5B8FB9;color:white;">Submit</button>    
+	                        <button class="btn " type="submit" name="submit" style="background:#00BFFF;color:white;">تغير الصور</button>    
 	                    </div>
                       </form>
 	            </div>

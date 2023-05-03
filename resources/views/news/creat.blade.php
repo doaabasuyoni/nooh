@@ -5,27 +5,27 @@
 @endpush
 
 @section('content')
-	<div class="container mt-5">
+	<div class="container mt-5" dir="rtl">
 	    <div class="row">
 	        <div class="col-sm-12">
 	            <div class="card">
 	                <div class="card-header pb-0">
-	                    <h5> create New</h5>
+	                    <h5>إنشاء خبر</h5>
 	                </div>
 	                <div class="card-body add-post">
 	                    <form action="/new" method="POST" enctype="multipart/form-data" >
                       @csrf
 	                        <div class="col-sm-12">
 	                            <div class="form-group">
-	                                <label for="validationCustom01">Title:</label>
-	                                <input class="form-control" id="validationCustom01" type="text" placeholder=" Title" name="title" />
+	                                <label for="validationCustom01">العنوان:</label>
+	                                <input class="form-control" id="validationCustom01" type="text" placeholder=" العنوان" name="title" />
 	                            </div>
 								<input class="form-control form-control-lg" name="file" id="file" type="file">
 
 	                            <div class="email-wrapper">
 	                                <div class="theme-form">
 	                                    <div class="form-group">
-	                                        <label>Content:</label>
+	                                        <label>المحتوى:</label>
 	                                        <textarea id="text-box" name="description" cols="10" rows="2"></textarea>
 	                                    </div>
 	                                </div>
@@ -34,7 +34,7 @@
                           <div>
 </div>
                   <div class="btn-showcase m-30 ">
-	                        <button class="btn " type="submit" name="submit" style="background:#5B8FB9;color:white;">Submit</button>    
+	                        <button class="btn " type="submit" name="submit" style="background:#00BFFF;color:white;">إنشاء خبر</button>    
 	                    </div>
                       </form>
 	            </div>

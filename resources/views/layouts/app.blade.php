@@ -8,8 +8,7 @@
     <meta name="description" content="viho admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities. laravel/framework: ^8.40">
     <meta name="keywords" content="admin template, viho admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="{{asset('assets/images/favicon.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" type="image/x-icon">
+    <link rel="icon" href="/image/logo.png" style="width: 60px;" >
     <title>@yield('title')</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -62,17 +61,20 @@ $(document).ready(function(){
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark shadow-sm" style="background:#5B8FB9;">
+        <nav class="navbar navbar-expand-md navbar-dark shadow-sm" style="background:#00BFFF;" dir="rtl">
             <div class="container">
              
-            <a class="navbar-brand" href="{{ url('/HomePage') }}" id="home" style="padding-top:0%;margin-right:5px">
-                   <img src="/image/home.png" style="width: 30px;height:25px">
+            <a class="navbar-brand" href="{{ url('/HomePage') }}" id="home" style="padding-top:1px;margin-right:3px;position:absolute;right:95px">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 24 24" fill="white" stroke="#00BFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>    
                 </a>
 
 
-                <a class="navbar-brand" href="{{ url('/HomePage') }}" id="home" style="font-size: 18px;text-transform:uppercase">
-                    Home
+                <a class="navbar-brand" href="{{ url('/HomePage') }}" id="home" style="font-size: 18px;text-transform:uppercase;">
+                    الصفحة الرئيسية
                 </a>
+
+
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}" id="h2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -88,16 +90,37 @@ $(document).ready(function(){
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <li class="nav-item" >
+                                    <a class="nav-link" href="{{ route('login') }}" style="color:white;position:absolute;left:250px;margin-top :-18px;font-size: 18px" >{{ __('تسجيل الدخول') }}</a>
                                 </li>
                             @endif
+                            @if(Route::has('register'))
+                            <div class="dropdown">
+  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border: none;background:#00BFFF;color:white;font-size: 18px;position:absolute;left:-480px;margin-top :-12px;">
+    إنشاء حساب
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background:#00BFFF;position:absolute;left:-480px;margin-top :14px;">
+    <li class="nav-item">
+      <a class="dropdown-item nav-link" href="{{ route('register') }}" style="color:white;">{{ __('طالب أو طالبة') }}</a>
+    </li>    
+    <li class="nav-item">
+      <a class="nav-link dropdown-item" href="{{ route('register') }}" style="color:white">{{ __('مشرف أو مشرفة') }}</a>
+    </li>
+  </ul>
+</div> 
 
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
+<style>
+  .dropdown-toggle:hover+.dropdown-menu {
+    display:block;
+  }
+  .dropdown-menu {
+    display: none;
+  }
+  .dropdown-item:hover {
+    background-color: #1E90FF;
+  }
+</style>
+@endif
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -108,7 +131,7 @@ $(document).ready(function(){
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('تسجيل الخروج') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

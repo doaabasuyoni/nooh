@@ -5,12 +5,12 @@
 <link rel="stylesheet" type="text/css" href="{{asset('assets/css/prism.css')}}">
 @endpush
 @section('content')
-	<div class="container mt-5">
+	<div class="container mt-5" dir="rtl">
 	    <div class="row">
 	        <div class="col-sm-12">
 	            <div class="card">
 	                <div class="card-header pb-0">
-	                    <h5> Edit New</h5>
+	                    <h5> تعديل الخبر</h5>
 	                </div>
 	                <div class="card-body add-post">
 	                    <form action="/new/{{$r4->slug}}" method="POST" enctype="multipart/form-data" >
@@ -18,14 +18,14 @@
                       @method('PUT')
 	                        <div class="col-sm-12">
 	                            <div class="form-group">
-	                                <label for="validationCustom01">Title:</label>
+	                                <label for="validationCustom01">العنوان:</label>
 	                                <input class="form-control" id="validationCustom01" type="text" value="{{$r4->title}}" name="title" />
 	                            </div>
 								<input class="form-control form-control-lg" name="file" id="file" type="file">
 	                            <div class="email-wrapper">
 	                                <div class="theme-form">
 	                                    <div class="form-group">
-	                                        <label>Content:</label>
+	                                        <label>المحتوى:</label>
 	                                        <textarea class="ckeditor form-control" id="text-box" name="description" cols="10" rows="2">{{$r4->description}}</textarea>
 	                                    </div>
 	                                </div>
@@ -34,7 +34,7 @@
                           <div>
                             </div>
                          <div class="btn-showcase m-30 ">
-	                        <button class="btn " type="submit" name="submit" style="background:#5B8FB9;color:white;">Edit New</button>    
+	                        <button class="btn " type="submit" name="submit" style="background:#00BFFF;color:white;">تعديل الخبر</button>    
 	                    </div>
                       </form>
 	            </div>

@@ -1,8 +1,8 @@
-<footer class="main-footer py-15 mt-20" style="margin-left: 0px !important; position: relative;background:#5B8FB9;">
+<footer class="main-footer py-15 mt-20" style="margin-left: 0px !important; position: relative;background:#00BFFF;" dir="rtl">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
     <div class="me-5 d-none d-lg-block">
-      <span style="font-size: 20px; color:white;font: weghit 100px;">Get connected with Rana Abdo:</span>
+      <span style="font-size: 20px; color:white;font: weghit 100px;">تواصل مع المهندسة رنا عبده :</span>
     </div>
     <!-- Left -->
 
@@ -32,13 +32,12 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4" style="color: white;font-family: 'Poppins';">
-            <i class="fas fa-gem me-3" ></i>University Name
+          <h6 class="text-uppercase fw-bold mb-4" style="color: white;font-family: 'Poppins';text-align: right">
+            <i class="fas fa-gem me-3"  >اسم الجامعة:</i>
           </h6>
-          <p style="color: white;" >
-          The Islamic University of Gaza
-          IUG is an independent academic institution located in Gaza. IUG is a home to the well-planned progra
-          </p>
+          <p style="color: white;text-align: right;" >
+                  الجامعة الإسلامية بغزة
+          مؤسسة أكاديمية مستقلة من مؤسسات التعليم العالي، تعمل بإشراف وزارة التربية والتعليم العالي، وهي عضو في: اتحاد الجامعات العربية، ورابطة الجامعات الإسلامية ، واتحاد الجامعات الإسلامية ، ورابطة جامعات البحر الأبيض المتوسط، والاتحاد الدولي للجامعات،           </p>
         </div>
         <!-- Grid column -->
             <!-- Grid column -->
@@ -47,20 +46,25 @@
           <img src="/image/logo.png" class="d-block w-120 " style="height: 200px;">
         </div>
         <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4" style="color: white;font-family: 'Poppins';">Contact</h6>
-          <p style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-           New York, NY 10012, US</p>
+          <img src="/image/eng.png" class="d-block w-120 " style="height: 200px;">
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="text-align: left;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color: white;font-family: 'Poppins';text-align: right;">معلومات الاتصال:</h6>
+          <p style="color: white;text-align: right;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          New York, NY 10012, US
+        </p>
 
-          <p style="color: white;">
+          <p style="color: white;text-align: right;"> 
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            info@example.com
+          info@example.com
           </p>
-          <p style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-           + 01 234 567 88</p>
+          <p style="color: white;text-align: right;"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          + 01 234 567 88
+        </p>
         </div>
         <!-- Grid column -->
       </div>
@@ -70,9 +74,9 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);color: white;">
-    © 2023 Copyright:
-    <a class="text-reset fw-bold" href="https://www.iugaza.edu.ps/" >The Islamic University of Gaza</a>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.03);color: white;">
+    © 2023 حقوق النشر:
+    <a class="text-reset fw-bold" href="https://www.iugaza.edu.ps/" >الجامعة الإسلامية بغزة</a>
   </div>
   <!-- Copyright -->
 </footer>

@@ -55,11 +55,11 @@
     {!! $r3->description!!}
     </p>
     <div style="margin-bottom: 100px;text-align:center">
-    <a href="/advertisements/{{$r3->slug}}/edit"   id="r1" class="bg-success">Edit advertisements</a>
+    <a href="/advertisements/{{$r3->slug}}/edit"   id="r1" class="bg-success">تعديل الإعلان</a>
     <form action="/advertisements/{{$r3->slug}}" method="POST"  >
                       @csrf
                       @method('delete')
-    <button   id="r2" class="bg-danger" name="submit" type="submit">Delete advertisements</a>
+    <button   id="r2" class="bg-danger" name="submit" type="submit">حذف الإعلان</a>
     </form>
     </div>
     </div>
